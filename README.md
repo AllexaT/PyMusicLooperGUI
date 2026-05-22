@@ -2,8 +2,6 @@
 
 A Python-based program for automatically finding the best loop points to achieve seamless music looping. Provides an easy-to-use graphical user interface.
 
-[English](#music-looper) | [中文說明](#music-looper-中文說明)
-
 <p align="center"><img src="./picture/MusicLooper.png" width="600" alt="Logo"></p>
 
 <table>

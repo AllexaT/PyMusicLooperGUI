@@ -42,10 +42,10 @@ Full list can be found at [libsndfile supported formats page](https://libsndfile
 1. **Download Source Code**
    ```sh
    # Clone the repository using git
-   git clone https://github.com/AllexaT/Music-Looper.git
+   git clone https://github.com/AllexaT/PyMusicLooperGUI.git
    
    # Enter project directory
-   cd MusicLooper
+   cd PyMusicLooperGUI
    ```
 
 2. **Install `uv`**

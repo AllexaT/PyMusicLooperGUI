@@ -1,66 +1,21 @@
 [project]
-name = "pymusiclooper"
-version = "3.6.0"
-description = "Repeat music endlessly and create seamless music loops, with play/export/tagging support."
-authors = [{ name = "arkrow", email = "arkrow@protonmail.com" }]
-requires-python = "~=3.10"
-readme = "README.md"
-license = "MIT"
-classifiers = [
-  "Development Status :: 5 - Production/Stable",
-  "Environment :: Console",
-  "License :: OSI Approved :: MIT License",
-  "Operating System :: OS Independent",
-  "Programming Language :: Python",
-  "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
-  "Programming Language :: Python :: 3.13",
-  "Topic :: Multimedia :: Sound/Audio",
-  "Topic :: Multimedia :: Sound/Audio :: Analysis",
-]
+name = "musiclooper"
+version = "0.1.0"
+description = "A GUI application for looping music."
+requires-python = ">=3.12"
 dependencies = [
-  "librosa>=0.11.0,<0.12.0",
-  "numpy>=1.25.0",
-  "soundfile>=0.12.1",
-  "sounddevice>=0.5.0",
-  "rich-click>=1.8.0,<2",
-  "rich>= 13.4.2",
-  "pytaglib>=3.0.0,<4",
-  "numba>=0.59.1",
-  "yt-dlp>=2025.01.26",
-  "click-params>=0.5.0,<0.6",
-  "click-option-group>=0.5.6,<0.6",
-  "lazy-loader>=0.3",
+    "lazy-loader>=0.3",
+    "librosa==0.10.2",
+    "numba>=0.59.1",
+    "numpy>=1.25.0,<2.0.0",
+    "psutil>=5.9.8",
+    "pyqt6>=6.4.0",
+    "pyqt6-qt6>=6.4.0",
+    "pyqt6-sip>=13.9.1",
+    "pytaglib>=3.0.0",
+    "rich>=13.4.2",
+    "sounddevice>=0.5.0",
+    "soundfile>=0.12.1",
+    "yt-dlp>=2024.8.6",
 ]
 
-[project.urls]
-Repository = "https://github.com/arkrow/PyMusicLooper"
-Changelog = "https://github.com/arkrow/PyMusicLooper/blob/master/CHANGELOG.md"
-
-[project.scripts]
-pymusiclooper = "pymusiclooper.__main__:cli"
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[tool.ruff]
-ignore = ["E501", "E402"]
-
-[tool.ruff.lint]
-select = [
-  # pycodestyle
-  "E",
-  # Pyflakes
-  "F",
-  # pyupgrade
-  "UP",
-  # flake8-bugbear
-  "B",
-  # flake8-simplify
-  "SIM",
-  # isort
-  "I",
-]
